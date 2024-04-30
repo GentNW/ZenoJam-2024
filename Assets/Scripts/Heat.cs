@@ -10,7 +10,7 @@ public class Heat : MonoBehaviour
     //1- If player is inside the fire collision radius then decrease the slider **done**
     //2- if player is outside the fire collision radius then increase the slider **done**
     //3- player's color nears blue as the meter increases **done**
-    //4- if player reaches 100% of the slider then game over
+    //4- if player reaches 100% of the slider then game over 
 
     public GameObject Player;
     public UnityEngine.UI.Slider slider;
@@ -18,7 +18,7 @@ public class Heat : MonoBehaviour
 
     private float slidervalue;
     private bool iswarming;
-
+    private bool isdead;
 
     private Color lerpedColor = Color.white;
     SpriteRenderer Renderer;
@@ -34,8 +34,10 @@ public class Heat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
+        if (isdead)
+        {
+
+        }
 
 
     }
@@ -55,6 +57,10 @@ public class Heat : MonoBehaviour
             slider.value = slidervalue;
             lerpedColor = Color.Lerp(Color.white, Color.cyan, slider.value);
             Renderer.material.color = lerpedColor;
+        }
+        if(slider.value >= 1f)
+        {
+            isdead = true;
         }
     }
     void OnTriggerEnter2D(Collider2D col)
