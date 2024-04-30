@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 1553701457286796015}
   - component: {fileID: 1183518053000042580}
   - component: {fileID: 6901656535898326661}
+  - component: {fileID: 767834258993283258}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,6 +134,7 @@ MonoBehaviour:
     m_Bits: 64
   Speedx: 3
   Speedy: 1.75
+  jumpForce: 50000
 --- !u!61 &6901656535898326661
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -178,6 +180,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 1.2}
   m_EdgeRadius: 0
+--- !u!114 &767834258993283258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7728728260946542729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2be24ce1c68414aa80ee9e6127eb71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 7728728260946542729}
+  slider: {fileID: 0}
 --- !u!1 &8448680446989218298
 GameObject:
   m_ObjectHideFlags: 0
