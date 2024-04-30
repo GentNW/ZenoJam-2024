@@ -1,0 +1,665 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.15f1 (b58023a2b463) revision 11894819'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16202 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\Game Engines\Unity 2022.3.15f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Games/ZenoJam 2024 v2
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52504
+Successfully changed project path to: E:/Games/ZenoJam 2024 v2
+E:/Games/ZenoJam 2024 v2
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [23520] Host "[IP] 192.168.1.108 [Port] 0 [Flags] 2 [Guid] 833872094 [EditorId] 833872094 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FKI4481) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [23520] Host "[IP] 192.168.1.108 [Port] 0 [Flags] 2 [Guid] 833872094 [EditorId] 833872094 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FKI4481) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
+Refreshing native plugins compatible for Editor in 8.46 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.15f1 (b58023a2b463)
+[Subsystems] Discovering subsystems at path E:/Game Engines/Unity 2022.3.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Games/ZenoJam 2024 v2/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 6650 XT (ID=0x73ef)
+    Vendor:   ATI
+    VRAM:     8147 MB
+    Driver:   31.0.24019.1006
+Initialize mono
+Mono path[0] = 'E:/Game Engines/Unity 2022.3.15f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Game Engines/Unity 2022.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Game Engines/Unity 2022.3.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Game Engines/Unity 2022.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003383 seconds.
+- Loaded All Assemblies, in  0.354 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.286 seconds
+Domain Reload Profiling: 640ms
+	BeginReloadAssembly (114ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (143ms)
+		LoadAssemblies (113ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (140ms)
+				TypeCache.ScanAssembly (125ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (287ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (225ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (154ms)
+			ProcessInitializeOnLoadMethodAttributes (51ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.639 seconds
+Refreshing native plugins compatible for Editor in 3.65 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.636 seconds
+Domain Reload Profiling: 1275ms
+	BeginReloadAssembly (134ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (412ms)
+		LoadAssemblies (300ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (186ms)
+			TypeCache.Refresh (156ms)
+				TypeCache.ScanAssembly (140ms)
+			ScanForSourceGeneratedMonoScriptInfo (24ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (637ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (469ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (355ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.47 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4026 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 64 unused Assets / (61.0 KB). Loaded Objects now: 4487.
+Memory consumption went from 145.0 MB to 145.0 MB.
+Total: 2.199400 ms (FindLiveObjects: 0.168200 ms CreateObjectMapping: 0.085800 ms MarkObjects: 1.865300 ms  DeleteObjects: 0.079300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 524731.792065 seconds.
+  path: Assets/Kenny's
+  artifactKey: Guid(2dd84da926be2d5409873e55734fbe22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's using Guid(2dd84da926be2d5409873e55734fbe22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09302e504646600df3fe8575d3aaf197') in 0.002351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.613534 seconds.
+  path: Assets/Kenny's pxiel platformer
+  artifactKey: Guid(2dd84da926be2d5409873e55734fbe22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer using Guid(2dd84da926be2d5409873e55734fbe22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c43e25ea8f055a58b671abe61e8fa1a') in 0.000518 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.197720 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles
+  artifactKey: Guid(e5a5c1ddd8262e14aa65de91fc8958c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles using Guid(e5a5c1ddd8262e14aa65de91fc8958c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e9043b1a78569702a1e9137ae582d32') in 0.000376 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.089894 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0000.png
+  artifactKey: Guid(18d2857148669c84cb8dab0e8118bfdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0000.png using Guid(18d2857148669c84cb8dab0e8118bfdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '971c93a8b5fcbfbf0a32eb57b1b3b851') in 0.144342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0031.png
+  artifactKey: Guid(8465e78e1eaf93b4f8986cdf16f1c134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0031.png using Guid(8465e78e1eaf93b4f8986cdf16f1c134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eb6de89f28380a8249baf4924301563') in 0.025411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0015.png
+  artifactKey: Guid(2d602fba45a0d8440947efd5043538d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0015.png using Guid(2d602fba45a0d8440947efd5043538d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de0b40adefc03c0f32d46d4d550eecd7') in 0.025182 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0066.png
+  artifactKey: Guid(4641887b7df127341b1a8dfa92b897dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0066.png using Guid(4641887b7df127341b1a8dfa92b897dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d310c0e6cfccfe11069462f26112804') in 0.016875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0053.png
+  artifactKey: Guid(0e9c43c2d3bad594bb5bcd58ed731786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0053.png using Guid(0e9c43c2d3bad594bb5bcd58ed731786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a97d0b5faf0e0a247724722997dff740') in 0.016121 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0007.png
+  artifactKey: Guid(475bad5871535164ca4b962bef89793c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0007.png using Guid(475bad5871535164ca4b962bef89793c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81123b176897ff7fdad46f3ecb804436') in 0.014463 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0024.png
+  artifactKey: Guid(2cf53ef690deaae4c85bfad0de7dc281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0024.png using Guid(2cf53ef690deaae4c85bfad0de7dc281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a083cb0a4d14b3963633363030619fca') in 0.018207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0020.png
+  artifactKey: Guid(768e7f11417e83542be978bb732d4e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0020.png using Guid(768e7f11417e83542be978bb732d4e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25742aa8ad8e6173b6ac3fbe3a70194a') in 0.031370 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0029.png
+  artifactKey: Guid(efe943d1edaf2894b99e6020fc504f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0029.png using Guid(efe943d1edaf2894b99e6020fc504f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fafd1918df9e1aee1fd3119dbec7552') in 0.033670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0047.png
+  artifactKey: Guid(ffd6050a00dd69c4c9e1ca706ceb201f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0047.png using Guid(ffd6050a00dd69c4c9e1ca706ceb201f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07291d4c908a997a5bd1de728fb8f58a') in 0.020593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0023.png
+  artifactKey: Guid(c1aac3dc1fe65c644a4ac5066086d816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0023.png using Guid(c1aac3dc1fe65c644a4ac5066086d816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e641354f911c79205d5ed7321cae4923') in 0.018322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0045.png
+  artifactKey: Guid(3d5898a2c4dffb44a89355f21ab86a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0045.png using Guid(3d5898a2c4dffb44a89355f21ab86a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f1832f618736a966e320b373026f8fc') in 0.019280 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0055.png
+  artifactKey: Guid(2c6402ae189350c4b8dc263a5ffcf668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0055.png using Guid(2c6402ae189350c4b8dc263a5ffcf668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f01049b23ebbaddaa9acafba71f0e8') in 0.016289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0046.png
+  artifactKey: Guid(38fcdd0bf1516dd429837e61c4fe1292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0046.png using Guid(38fcdd0bf1516dd429837e61c4fe1292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91d3b726134656afb3bb01999471fc1c') in 0.015205 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0050.png
+  artifactKey: Guid(95e82b1905e70db45979a58afcbb3646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0050.png using Guid(95e82b1905e70db45979a58afcbb3646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c18a918304fc8c190e84cb9e2acd2dd9') in 0.016004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0065.png
+  artifactKey: Guid(eb9cea045843e9d42b0cd2df4f93784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0065.png using Guid(eb9cea045843e9d42b0cd2df4f93784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '433e7dd76b7887d2ca126d71c3ac705e') in 0.017211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0074.png
+  artifactKey: Guid(616460df5d67ea645b69d07d2194baad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0074.png using Guid(616460df5d67ea645b69d07d2194baad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a31e59d0c67fe3f8319cd1551cb1aa4') in 0.020564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0061.png
+  artifactKey: Guid(cec1f5abf10b1984c99f2caba4e14019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0061.png using Guid(cec1f5abf10b1984c99f2caba4e14019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f42d3404fc30ae0b54bbe1a2c1323e') in 0.044595 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0048.png
+  artifactKey: Guid(1b1cf6fd4e2c5ed43855162d6cbf44f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0048.png using Guid(1b1cf6fd4e2c5ed43855162d6cbf44f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e37ed3a988dca5370b15d96d32ba77') in 0.032626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0004.png
+  artifactKey: Guid(8eda09a14b6edc94b8d08087c3296be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0004.png using Guid(8eda09a14b6edc94b8d08087c3296be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d5daa8a51138f31e14b8dd1d6a3063') in 0.028111 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0010.png
+  artifactKey: Guid(9816bbc8601b4154ca29ac73eb642a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0010.png using Guid(9816bbc8601b4154ca29ac73eb642a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e01a161be9f0a9a99d91bea56c965bab') in 0.027324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0000.png
+  artifactKey: Guid(766b73cedb1b9d64f8c55d3bac676284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0000.png using Guid(766b73cedb1b9d64f8c55d3bac676284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c8741b831bb2d8b95da84bcb5ef4e4') in 0.027651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0009.png
+  artifactKey: Guid(f596d548d2f59a946a946cbef20bfbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0009.png using Guid(f596d548d2f59a946a946cbef20bfbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c3d49935ea10d507d7295ef45e8368c') in 0.030585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0021.png
+  artifactKey: Guid(35024aaf05f67b74b885265aa11abf50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0021.png using Guid(35024aaf05f67b74b885265aa11abf50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e644fa2e85cd3fe0466c42adfb599868') in 0.046069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0044.png
+  artifactKey: Guid(6c4aea790e862044297fcb7afff73822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0044.png using Guid(6c4aea790e862044297fcb7afff73822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20cb971488617a35246b1b7df90d91cb') in 0.064637 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0005.png
+  artifactKey: Guid(e51e9e2be948fa2488b051ab8c16fbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0005.png using Guid(e51e9e2be948fa2488b051ab8c16fbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb2d9da27d48f07514de6924d273df6') in 0.041416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0043.png
+  artifactKey: Guid(e0dff1c9a6db2154d845079c253cd198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0043.png using Guid(e0dff1c9a6db2154d845079c253cd198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '258df3edfc45cb544862ab83e96d0314') in 0.032083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0014.png
+  artifactKey: Guid(a6db30e486bfcf145ba4914c9b664ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0014.png using Guid(a6db30e486bfcf145ba4914c9b664ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407fa52d0ca71170db762af24c2515ee') in 0.031992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0051.png
+  artifactKey: Guid(9b9d3bc83ded7844a988f9281d389520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0051.png using Guid(9b9d3bc83ded7844a988f9281d389520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0331b09b8860d3dea11f2e41b9b2fa3') in 0.028296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0003.png
+  artifactKey: Guid(19bab54b89e82d84d94c74b555ea8e79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0003.png using Guid(19bab54b89e82d84d94c74b555ea8e79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '180ae7f7f6b88f5fb16a339962433221') in 0.020916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0003.png
+  artifactKey: Guid(e477c064acb56bd42ad601c683bc463b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0003.png using Guid(e477c064acb56bd42ad601c683bc463b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd28f79fc5ce46b54b9faf7e623b322e1') in 0.036638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0059.png
+  artifactKey: Guid(c2ceb12dc44542244937403493ca6782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0059.png using Guid(c2ceb12dc44542244937403493ca6782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b45c98c35d0dea441a28b438c54b520f') in 0.017717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0077.png
+  artifactKey: Guid(cfbbcaabb18008748aa5553713727ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0077.png using Guid(cfbbcaabb18008748aa5553713727ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f06e2abbea57cfec027f52106111b8') in 0.050434 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0016.png
+  artifactKey: Guid(f15bd211e207722409a654c73770132c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0016.png using Guid(f15bd211e207722409a654c73770132c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f4f826af40db43c38abd4cb1e0c2fb2') in 0.014251 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0011.png
+  artifactKey: Guid(ae00c996f34610548b618d2d16d51caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0011.png using Guid(ae00c996f34610548b618d2d16d51caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '391024fcf7cd512a0d72894ab5e1d9ad') in 0.027380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0004.png
+  artifactKey: Guid(d1d8021b795693c4b89688a196804156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0004.png using Guid(d1d8021b795693c4b89688a196804156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f719640670e7b8d7502dff8ccae03b1') in 0.030214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0052.png
+  artifactKey: Guid(d1babaa1d9196af4cb50d162c08b5f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0052.png using Guid(d1babaa1d9196af4cb50d162c08b5f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3153ceb12eb0adb589e42732fdf9ee0c') in 0.036728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0063.png
+  artifactKey: Guid(aabd3224889da6844bfb974fee55323c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0063.png using Guid(aabd3224889da6844bfb974fee55323c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded484b67cd46732dda7bb1a61cd4d43') in 0.057445 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0038.png
+  artifactKey: Guid(312df920ad818f64b8c4f5184a443adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0038.png using Guid(312df920ad818f64b8c4f5184a443adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '742ec853820ae1ef65915e8b549ede6c') in 0.019926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0011.png
+  artifactKey: Guid(bfaf70f364257e940957fda01dc1f2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0011.png using Guid(bfaf70f364257e940957fda01dc1f2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20497bf8d2aea658a2eb18f7da41eb9c') in 0.014550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0016.png
+  artifactKey: Guid(5e4bec6d5d7476d4aaac45ac5163b8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0016.png using Guid(5e4bec6d5d7476d4aaac45ac5163b8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc8aa115719860deead99a162cfe25bb') in 0.025369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0018.png
+  artifactKey: Guid(c3edaf02134ce934a8aec72c60dbc25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0018.png using Guid(c3edaf02134ce934a8aec72c60dbc25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a955361db9a6e0c57e6e6cdf9deddfa') in 0.012808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0039.png
+  artifactKey: Guid(8e3d78c9d8d7f6945b44e227d12dfd78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0039.png using Guid(8e3d78c9d8d7f6945b44e227d12dfd78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '996f4e50479dce63c5d2e97daee2f5fc') in 0.018372 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0023.png
+  artifactKey: Guid(0bf20cf593869ad4398498e76f5307a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0023.png using Guid(0bf20cf593869ad4398498e76f5307a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '219a78590f7dec3b6a213ad25bc5b026') in 0.016557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0076.png
+  artifactKey: Guid(4a6a41d66f14d7f4d9c220665b8f3060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0076.png using Guid(4a6a41d66f14d7f4d9c220665b8f3060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4020060ebdc8b1d8f335b1509c0fe1ef') in 0.016900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001950 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0022.png
+  artifactKey: Guid(b3d0a9857ae469f4eb390b64aeb84496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/Backgrounds/tile_0022.png using Guid(b3d0a9857ae469f4eb390b64aeb84496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '020012a24ce4da067da16b5b131b58a5') in 0.010678 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0064.png
+  artifactKey: Guid(fd33d9e155e071b479f1edd817a3bf15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0064.png using Guid(fd33d9e155e071b479f1edd817a3bf15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8eed8826c33e65528c58cc245b22ec') in 0.022823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0049.png
+  artifactKey: Guid(034c0955ea93bab40aa7bb60addecebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0049.png using Guid(034c0955ea93bab40aa7bb60addecebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59d96df44e4b6dbe1d9b69fd89a511a8') in 0.016210 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0009.png
+  artifactKey: Guid(6502af26ea0c58747af214a063fba5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0009.png using Guid(6502af26ea0c58747af214a063fba5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1472e6982d937f9e2b0870860f17d388') in 0.018023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Kenny's pxiel platformer/Tiles/tile_0067.png
+  artifactKey: Guid(cee113cae847bf44a88ace6c88d0dd33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tiles/tile_0067.png using Guid(cee113cae847bf44a88ace6c88d0dd33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67efab18039f5f221dbf73cc0819408c') in 0.016375 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.979300 seconds.
+  path: Assets/Kenny's pxiel platformer/Tilemap
+  artifactKey: Guid(b57731e89d68ed8499ee6c5875abdb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tilemap using Guid(b57731e89d68ed8499ee6c5875abdb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b36ecf967186cbb3c09bd708b4fc650') in 0.000406 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.074830 seconds.
+  path: Assets/Kenny's pxiel platformer/Tilemap/tilemap.png
+  artifactKey: Guid(efebbde663930db45b8d32b8db61f89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tilemap/tilemap.png using Guid(efebbde663930db45b8d32b8db61f89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeeaab0104b5d9d6f349660a3374c67e') in 0.020667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Kenny's pxiel platformer/Tilemap/tilemap-characters.png
+  artifactKey: Guid(369e85a482b063047865a4a5ec1bd324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tilemap/tilemap-characters.png using Guid(369e85a482b063047865a4a5ec1bd324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e97504a7b7455eb1d51a3e8edc0a8cf9') in 0.017271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Kenny's pxiel platformer/Tilemap/tilemap-characters_packed.png
+  artifactKey: Guid(d3e98de77593c354f9561de5380c6bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tilemap/tilemap-characters_packed.png using Guid(d3e98de77593c354f9561de5380c6bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb142c36148b66e4675fd808bf95fff') in 0.026768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.771467 seconds.
+  path: Assets/Kenny's pxiel platformer/Tilemap/tilemap-backgrounds_packed.png
+  artifactKey: Guid(28cc9df6fa73b0242afb829ed6deb576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tilemap/tilemap-backgrounds_packed.png using Guid(28cc9df6fa73b0242afb829ed6deb576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33220efcb623907eed22136b4ee502b7') in 0.024483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Kenny's pxiel platformer/Tilemap/tilemap_packed.png
+  artifactKey: Guid(3a0ef3c2b44de734a8b676d0e5ebc2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tilemap/tilemap_packed.png using Guid(3a0ef3c2b44de734a8b676d0e5ebc2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f5369f9e8fb019e064a8765424b9333') in 0.019718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 11.227276 seconds.
+  path: Assets/Kenny's pxiel platformer/Tilemap/tilemap-backgrounds.png
+  artifactKey: Guid(7ad2764b872902c4d9c12f825f1aeab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenny's pxiel platformer/Tilemap/tilemap-backgrounds.png using Guid(7ad2764b872902c4d9c12f825f1aeab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c002fce4cb1cdfd31618223cd0d28885') in 0.017162 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
