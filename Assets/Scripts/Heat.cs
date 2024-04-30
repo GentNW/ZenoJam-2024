@@ -43,7 +43,7 @@ public class Heat : MonoBehaviour
     }
     void FixedUpdate()
     {
-        Debug.Log(slider.value);
+        
         if (iswarming && slider.value != 0f)
         {
             slidervalue = slider.value - 0.002f;
