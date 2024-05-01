@@ -8,6 +8,7 @@ public class Enemy_behaviour : MonoBehaviour
     //1- Walking idly **done**
     //2- Spot and pursue **done**
     //3- increase heat meters **done**
+    //4- enemy dies once they enter the fire warming range **done**
 
     public UnityEngine.UI.Slider slider;
     public GameObject pointA;
@@ -17,11 +18,15 @@ public class Enemy_behaviour : MonoBehaviour
 
 
     private float speed = 3;
+    private float heat = 0.001f;
 
     private bool canatk = false;
     private bool Walk = true;
     private bool Pursuing = false;
+
     private SpriteRenderer mysr;
+    
+    private Color lerpedColor = Color.cyan;
     // Start is called before the first frame update
     void Start()
     {
@@ -72,7 +77,7 @@ public class Enemy_behaviour : MonoBehaviour
         this.transform.position = Vector2.Lerp(this.transform.position, dest.transform.position, Time.deltaTime);
 
         // Check if position is reached
-        var dist = Vector3.Distance(this.transform.position, dest.transform.position);
+        var dist = Vector2.Distance(this.transform.position, dest.transform.position);
 
         if (dist <= 1)
         {
@@ -96,13 +101,34 @@ public class Enemy_behaviour : MonoBehaviour
         {
             Pursuing = true;
             Walk = false;
+        }
+        
+        
+
+    }
+    private void OnTriggerStay2D(Collider2D col)
+    {
+        //Checks if the trigger that the enemy stays in is fire and close enough to die
+        if (col.tag == "Fire" && Vector2.Distance(this.transform.position, col.transform.position) <= 2.5)
+        {
+            lerpedColor = Color.Lerp(Color.cyan, Color.red, heat+=0.003f);
+            mysr.material.color = lerpedColor;
+            if(heat >= 1f)
+            {
+                Destroy(this.gameObject);
+            }
 
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        //Debug.Log(col.collider.tag);
+        
+    }
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.tag == "Player")
+        if (col.CompareTag("Player"))
         {
             Pursuing = false;
             //Walk = true;
