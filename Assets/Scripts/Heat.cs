@@ -15,11 +15,12 @@ public class Heat : MonoBehaviour
 
     public GameObject Player;
     public UnityEngine.UI.Slider slider;
-
+    public bool activatecp = false;
+    public Transform cppos;
 
     private float slidervalue;
     private bool iswarming;
-    private bool isdead;
+    public bool isdead;
 
     private Color lerpedColor = Color.white;
     SpriteRenderer Renderer;
@@ -37,7 +38,11 @@ public class Heat : MonoBehaviour
     {
         if (isdead)
         {
-            SceneManager.LoadScene("Level_GameOver");
+            slidervalue = 0f;
+            //isdead = false;
+
+            //SceneManager.LoadScene("Level_1");
+            //SceneManager.LoadScene("Level_GameOver");
         }
 
 
@@ -70,6 +75,8 @@ public class Heat : MonoBehaviour
         {
             //Decrease the slider
             iswarming = true;
+            activatecp = true;
+            cppos = col.gameObject.transform;
         }
         
         
