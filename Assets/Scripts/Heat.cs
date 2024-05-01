@@ -78,8 +78,6 @@ public class Heat : MonoBehaviour
             activatecp = true;
             cppos = col.gameObject.transform;
         }
-        
-        
     }
 
     void OnTriggerExit2D(Collider2D col)

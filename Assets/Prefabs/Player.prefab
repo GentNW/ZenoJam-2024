@@ -197,6 +197,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 7728728260946542729}
   slider: {fileID: 0}
+  activatecp: 0
+  cppos: {fileID: 0}
+  isdead: 0
 --- !u!95 &1292857709450833709
 Animator:
   serializedVersion: 5
@@ -333,6 +336,7 @@ GameObject:
   - component: {fileID: 722587160157441557}
   - component: {fileID: 7149646496755871242}
   - component: {fileID: 1126597004155259910}
+  - component: {fileID: 1712804547245451127}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -349,7 +353,7 @@ Transform:
   m_GameObject: {fileID: 9214534481390815097}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.21, y: 0, z: 0}
+  m_LocalPosition: {x: 1.401, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -401,7 +405,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.18, y: 0.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -439,6 +443,20 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17315292, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.8875332
+  m_Radius: 1
+--- !u!114 &1712804547245451127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9214534481390815097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fe9689b2cf63446a50937c180b6ba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forcewave: {fileID: 21300000, guid: a5b0639775d0f424181e6f8c977e0911, type: 3}
+  player: {fileID: 0}

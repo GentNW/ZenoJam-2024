@@ -7,6 +7,7 @@ TagManager:
   - Fire
   - Enemy
   - Ship
+  - Force
   layers:
   - Default
   - TransparentFX

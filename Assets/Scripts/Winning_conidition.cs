@@ -18,7 +18,7 @@ public class Winning_conidition : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Ship") 
+        if(col.gameObject.tag == "Ship" && this.gameObject.GetComponent<BoxCollider2D>().IsTouching(col))
         {
             Debug.Log("You Won!");
         }
