@@ -8,9 +8,11 @@ public class Player_Attack : MonoBehaviour
 
     private float push = 0.1f;
     private SpriteRenderer mysr;
+    private bool right = false;
 
     public Sprite forcewave;
     public GameObject player;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,22 +22,42 @@ public class Player_Attack : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(player.GetComponent<SpriteRenderer>().flipX == false && Input.GetMouseButtonDown(0))
+        if(player.GetComponent<SpriteRenderer>().flipX == true)
         {
-            //Debug.Log("pesni");
-            transform.localPosition = new Vector3(transform.localPosition.x * -1, transform.localPosition.y, transform.localPosition.z);
+            right = true;
         }
-        if (player.GetComponent<SpriteRenderer>().flipX == true && Input.GetMouseButtonDown(0))
+
+        if (player.GetComponent<SpriteRenderer>().flipX == false)
         {
-            transform.localPosition = new Vector3(transform.localPosition.x * -1, transform.localPosition.y, transform.localPosition.z);
+            right = false;
         }
+        //facing left
+        if (player.GetComponent<SpriteRenderer>().flipX == false && Input.GetMouseButton(0))
+        {
+            if (transform.localPosition.x >= 1.0f)
+            {
+                transform.localPosition = new Vector3(transform.localPosition.x * -1, transform.localPosition.y, transform.localPosition.z);
+                right = false;
+            }
+            
+        }
+
+        //facing right
+        if (player.GetComponent<SpriteRenderer>().flipX == true && Input.GetMouseButton(0))
+        {
+            if (transform.localPosition.x <= -1f && transform.localPosition.x <= 0f)
+            {
+                transform.localPosition = new Vector3(transform.localPosition.x * -1, transform.localPosition.y, transform.localPosition.z);
+                right = true;
+            }
+        }
+
         //checks if the player is pressing the Left mouse button
         if (Input.GetMouseButton(0))
         {
             mysr.sprite = forcewave;
-            //mysr.flipY = true;
-            //mysr.flipY = false;
         }
+
         else
         {
             mysr.sprite = null;

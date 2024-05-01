@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Winning_conidition : MonoBehaviour
 {
@@ -20,7 +21,8 @@ public class Winning_conidition : MonoBehaviour
     {
         if(col.gameObject.tag == "Ship" && this.gameObject.GetComponent<BoxCollider2D>().IsTouching(col))
         {
-            Debug.Log("You Won!");
+            //Debug.Log("You Won!");
+            SceneManager.LoadScene("Level_GameWon");
         }
     }
 }
