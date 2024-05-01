@@ -108,9 +108,10 @@ public class Enemy_behaviour : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D col)
     {
-        //Checks if the trigger that the enemy stays in is fire and close enough to die
+        //Checks if the trigger that the enemy stays in fact a fireplace and close enough to die
         if (col.tag == "Fire" && Vector2.Distance(this.transform.position, col.transform.position) <= 2.5)
         {
+            //lerp the enemy's colour gradually into the color red until death
             lerpedColor = Color.Lerp(Color.cyan, Color.red, heat+=0.003f);
             mysr.material.color = lerpedColor;
             if(heat >= 1f)
@@ -119,12 +120,6 @@ public class Enemy_behaviour : MonoBehaviour
             }
 
         }
-    }
-
-    private void OnCollisionEnter2D(Collision2D col)
-    {
-        //Debug.Log(col.collider.tag);
-        
     }
     private void OnTriggerExit2D(Collider2D col)
     {
