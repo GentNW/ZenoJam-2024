@@ -12,9 +12,11 @@ public class Movement : MonoBehaviour
     private Vector2 velocityX;
     private Vector2 velocityY;
     private Vector2 velocityXY;
+
     private Rigidbody2D rb2D;
     private Sprite mySprite;
     private SpriteRenderer sr;
+    private Animator anim;
 
     private float lastDistance;
     private float lastDistanceV2;
@@ -29,8 +31,9 @@ public class Movement : MonoBehaviour
     public float jumpForce = 500f;
     void Awake()
     {
-        sr = gameObject.GetComponent<SpriteRenderer>();
-        rb2D = gameObject.GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+        rb2D = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Start()
@@ -39,14 +42,16 @@ public class Movement : MonoBehaviour
         velocityX = new Vector2(Speedx, 0f);
         velocityY = new Vector2(0f, Speedy);
         velocityXY = new Vector2(Speedx, -Speedy);
+        
     }
-    void Update()
+    void FixedUpdate()
     {
         //Debug.Log(isjumping);
         //Movement
         if (Input.GetKey(KeyCode.A) == true)
         {
             sr.flipX = false;
+            //anim.SetBool("Iswalking", true);
             rb2D.MovePosition(rb2D.position + -velocityX * Time.fixedDeltaTime);
             if (isjumping)
             {
@@ -54,15 +59,28 @@ public class Movement : MonoBehaviour
                 rb2D.MovePosition(rb2D.position + velocityXY * Time.fixedDeltaTime);
             }
         }
+        else
+        {
+            anim.SetBool("Iswalking", false);
+        }
         if (Input.GetKey(KeyCode.D) == true)
         {
             sr.flipX = true;
+            //anim.SetBool("Iswalking", true);
             rb2D.MovePosition(rb2D.position + velocityX * Time.fixedDeltaTime);
             if (isjumping)
             {
                 velocityXY.Set(Speedx, -Speedy);
                 rb2D.MovePosition(rb2D.position + velocityXY * Time.fixedDeltaTime);
             }
+        }
+        if (Input.GetKey(KeyCode.A) == true ||  Input.GetKey(KeyCode.D) == true)
+        {
+            anim.SetBool("Iswalking", true);
+        }
+        else
+        {
+            anim.SetBool("Iswalking", false);
         }
         //if (Input.GetKey(KeyCode.W) == true) 
         //{

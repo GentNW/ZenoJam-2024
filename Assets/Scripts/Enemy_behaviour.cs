@@ -64,7 +64,7 @@ public class Enemy_behaviour : MonoBehaviour
     }
     void Attack()
     {
-        slider.value = slider.value + 0.001f;
+        slider.value = slider.value + 0.0015f;
     }
 
     void Walking()
