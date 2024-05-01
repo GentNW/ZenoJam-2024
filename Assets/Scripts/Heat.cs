@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.U2D;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -36,7 +37,7 @@ public class Heat : MonoBehaviour
     {
         if (isdead)
         {
-
+            SceneManager.LoadScene("Level_GameOver");
         }
 
 
