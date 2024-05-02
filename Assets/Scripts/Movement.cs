@@ -43,18 +43,27 @@ public class Movement : MonoBehaviour
 
         // we store the initial velocity, which is a struct.
         var v = rb2D.velocity;
+        Debug.Log(v.y);
 
-        if (v.y == 0f)
-            isJumping = false;
+        //if (v.y == 0f && )
+        //{
+        //    isJumping = false;
+        //}
+            
 
         if (Input.GetKey(KeyCode.Space) && !isJumping)
         {
+            
             v.y = jumpForce;
             isJumping = true;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
+            //if (v.y <= 0f)
+            //{
+            //    isJumping = false;
+            //}
             sr.flipX = false;
             v.x = -Speedx;
         }
@@ -62,6 +71,10 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
         {
+            //if (v.y <= 0f)
+            //{
+            //    isJumping = false;
+            //}
             sr.flipX = true;
             v.x = Speedx;
         }
@@ -75,6 +88,14 @@ public class Movement : MonoBehaviour
         else
         {
             anim.SetBool("Iswalking", false);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.collider.CompareTag("Ground"))
+        {
+            isJumping = false;
         }
     }
 }
