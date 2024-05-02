@@ -7,11 +7,11 @@ public class Movement : MonoBehaviour
 {
     //1- when you press A untick the x flip **done**
     //2- when you press D tick the x flip **done**
-    //3- Check for Ground when moving 
+    //3- Move while in the air **done**
 
-    private Vector2 velocityX;
-    private Vector2 velocityY;
-    private Vector2 velocityXY;
+    public Transform Ground;
+    public LayerMask groundLayer;
+    public float Speedx = 1.75f;
 
     private Rigidbody2D rb2D;
     private Sprite mySprite;
@@ -22,13 +22,11 @@ public class Movement : MonoBehaviour
     private float lastDistanceV2;
     private float fforce;
 
-    private bool isjumping;
+    private bool isJumping;
 
-    public Transform Ground;
-    public LayerMask groundLayer;
-    public float Speedx = 1.75f;
-    public float Speedy = 1.75f;
-    public float jumpForce = 500f;
+   
+
+    private float jumpForce = 5f;
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -38,43 +36,39 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
-
-        velocityX = new Vector2(Speedx, 0f);
-        velocityY = new Vector2(0f, Speedy);
-        velocityXY = new Vector2(Speedx, -Speedy);
         
     }
     void FixedUpdate()
     {
-        //Debug.Log(isjumping);
-        //Movement
-        if (Input.GetKey(KeyCode.A) == true)
+
+        // we store the initial velocity, which is a struct.
+        var v = rb2D.velocity;
+
+        if (v.y == 0f)
+            isJumping = false;
+
+        if (Input.GetKey(KeyCode.Space) && !isJumping)
+        {
+            v.y = jumpForce;
+            isJumping = true;
+        }
+
+        if (Input.GetKey(KeyCode.A))
         {
             sr.flipX = false;
-            //anim.SetBool("Iswalking", true);
-            rb2D.MovePosition(rb2D.position + -velocityX * Time.fixedDeltaTime);
-            if (isjumping)
-            {
-                velocityXY.Set(-Speedx, -Speedy);
-                rb2D.MovePosition(rb2D.position + velocityXY * Time.fixedDeltaTime);
-            }
+            v.x = -Speedx;
         }
-        else
-        {
-            anim.SetBool("Iswalking", false);
-        }
-        if (Input.GetKey(KeyCode.D) == true)
+
+
+        if (Input.GetKey(KeyCode.D))
         {
             sr.flipX = true;
-            //anim.SetBool("Iswalking", true);
-            rb2D.MovePosition(rb2D.position + velocityX * Time.fixedDeltaTime);
-            if (isjumping)
-            {
-                velocityXY.Set(Speedx, -Speedy);
-                rb2D.MovePosition(rb2D.position + velocityXY * Time.fixedDeltaTime);
-            }
+            v.x = Speedx;
         }
-        if (Input.GetKey(KeyCode.A) == true ||  Input.GetKey(KeyCode.D) == true)
+
+        rb2D.velocity = v;
+
+        if (Input.GetKey(KeyCode.A) == true || Input.GetKey(KeyCode.D) == true)
         {
             anim.SetBool("Iswalking", true);
         }
@@ -82,61 +76,5 @@ public class Movement : MonoBehaviour
         {
             anim.SetBool("Iswalking", false);
         }
-        //if (Input.GetKey(KeyCode.W) == true) 
-        //{
-        //    rb2D.MovePosition(rb2D.position + velocityY * Time.fixedDeltaTime);
-        //}
-        //if (Input.GetKey(KeyCode.S) == true)
-        //{
-        //    rb2D.MovePosition(rb2D.position + -velocityY * Time.fixedDeltaTime);
-        //}
-
-
-        //    Debug.DrawRay(transform.position, transform.right, Color.magenta);
-        //    // Jumping
-        //    float jumpAxis = Input.GetAxisRaw("Jump");
-
-        //    if (jumpAxis != 0 && rb2D.velocity.y <= 0)
-        //    {
-        //        // Raycast from the feet of the player directly down (or the origin, doesn't matter)
-        //        RaycastHit2D hit2D = Physics2D.Raycast(rb2D.position - new Vector2(0.5f, 0.5f), Vector2.down, 0.2f, groundLayer);
-
-        //        // If the raycast hit something
-        //        if (hit2D)
-        //        {
-        //            // Check if the distance of the object hit is less than the last distance checked
-        //            if (hit2D.distance < lastDistance)
-        //            {
-        //                // Update the last distance if the object below is less than the last known distance
-        //                lastDistance = hit2D.distance;
-        //                isjumping = false;
-        //            }
-        //            else
-        //            {
-
-        //                // If the hit distance is not less than the lass distance, then jump (he isn't going to go any lower)
-        //                if (!isjumping)
-        //                {
-        //                    lastDistance = 100f;
-        //                    fforce = jumpAxis * jumpForce * Time.deltaTime;
-        //                    Jump(jumpAxis * jumpForce * Time.deltaTime);
-        //                }
-
-        //            }
-        //        }
-        //    }
-
-
-
-        //}
-        //void Jump(float force)
-        //{
-        //    if (force < 0)
-        //    {
-        //        return;
-        //    }
-        //    rb2D.AddForce(new Vector2(0, force));
-        //    isjumping = true;
-        //}
     }
 }

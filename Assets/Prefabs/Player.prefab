@@ -137,7 +137,7 @@ MonoBehaviour:
     m_Bits: 64
   Speedx: 3
   Speedy: 1.75
-  jumpForce: 50000
+  jumpForce: 0
 --- !u!61 &6901656535898326661
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -198,7 +198,7 @@ MonoBehaviour:
   Player: {fileID: 7728728260946542729}
   slider: {fileID: 0}
   activatecp: 0
-  cppos: {fileID: 0}
+  cppos: {x: 0, y: 0, z: 0}
   isdead: 0
 --- !u!95 &1292857709450833709
 Animator:
@@ -459,4 +459,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forcewave: {fileID: 21300000, guid: a5b0639775d0f424181e6f8c977e0911, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 7728728260946542729}
