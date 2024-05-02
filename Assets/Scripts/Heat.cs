@@ -16,7 +16,7 @@ public class Heat : MonoBehaviour
     public GameObject Player;
     public UnityEngine.UI.Slider slider;
     public bool activatecp = false;
-    public Transform cppos;
+    public Vector3 cppos;
 
     private float slidervalue;
     private bool iswarming;
@@ -76,7 +76,7 @@ public class Heat : MonoBehaviour
             //Decrease the slider
             iswarming = true;
             activatecp = true;
-            cppos = col.gameObject.transform;
+            cppos = col.gameObject.transform.position;
         }
     }
 

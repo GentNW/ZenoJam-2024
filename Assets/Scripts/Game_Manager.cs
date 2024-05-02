@@ -27,14 +27,17 @@ public class Game_Manager : MonoBehaviour
         {
             if(myheat.cppos == null)
             {
-                Player.GetComponent<Rigidbody2D>().MovePosition(new Vector2(-9.26f, -0.602994f));
+                myheat.cppos = new Vector3(-9.26f, -0.602994f, 0f);
+                // Player.GetComponent<Rigidbody2D>().MovePosition(new Vector2(-9.26f, -0.602994f));
+                myheat.isdead = false;
+
             }
             else 
             {
                 myheat.slider.value = 0f;
                 myheat.isdead = false;
-                Player.transform.position = myheat.cppos.position;
-                Player.GetComponent<Rigidbody2D>().MovePosition(new Vector2(Player.transform.position.x, Player.transform.position.y + 10));
+                //Player.transform.position = myheat.cppos;
+                Player.GetComponent<Rigidbody2D>().MovePosition(new Vector2(myheat.cppos.x, myheat.cppos.y + 2));
             }
         }
     }
