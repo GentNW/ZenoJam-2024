@@ -30,6 +30,7 @@ public class Player_Attack : MonoBehaviour
             if (transform.localPosition.x >= 1.0f)
             {
                 transform.localPosition = new Vector3(transform.localPosition.x * -1, transform.localPosition.y, transform.localPosition.z);
+                push = push * -1;
             }
             
         }
@@ -40,6 +41,7 @@ public class Player_Attack : MonoBehaviour
             if (transform.localPosition.x <= -1f && transform.localPosition.x <= 0f)
             {
                 transform.localPosition = new Vector3(transform.localPosition.x * -1, transform.localPosition.y, transform.localPosition.z);
+                push = push * -1;
             }
         }
 

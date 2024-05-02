@@ -37,7 +37,7 @@ public class Enemy_behaviour : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Pursuing && !canatk && !Walk)
+        if (Pursuing && !Walk)
         {
             Walk_to_p();
         }
@@ -47,7 +47,7 @@ public class Enemy_behaviour : MonoBehaviour
             Walking();
         }
 
-        if (canatk && !Walk && !Pursuing)
+        if (canatk && !Walk)
         {
             Attack();
         }
@@ -64,7 +64,7 @@ public class Enemy_behaviour : MonoBehaviour
         if (dist <= 1.5)
         {
             canatk = true;
-            Pursuing = false;
+            //Pursuing = false;
         }
     }
     void Attack()
@@ -125,7 +125,8 @@ public class Enemy_behaviour : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            Pursuing = false;
+            //Pursuing = false;
+            canatk = false;
             //Walk = true;
         }
     }
