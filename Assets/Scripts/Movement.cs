@@ -26,7 +26,7 @@ public class Movement : MonoBehaviour
 
    
 
-    private float jumpForce = 5f;
+    public float jumpForce = 9f;
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();

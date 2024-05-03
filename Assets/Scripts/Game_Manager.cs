@@ -27,7 +27,8 @@ public class Game_Manager : MonoBehaviour
         {
             if(myheat.cppos == null)
             {
-                myheat.cppos = new Vector2(-9.26f, -0.602994f);
+                Debug.Log("lmao");
+                myheat.cppos = new Vector2(-12.13f, -0.99f);
                 myheat.isdead = false;
 
             }
