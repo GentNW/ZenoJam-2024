@@ -43,12 +43,6 @@ public class Movement : MonoBehaviour
 
         // we store the initial velocity, which is a struct.
         var v = rb2D.velocity;
-        Debug.Log(v.y);
-
-        //if (v.y == 0f && )
-        //{
-        //    isJumping = false;
-        //}
             
 
         if (Input.GetKey(KeyCode.Space) && !isJumping)

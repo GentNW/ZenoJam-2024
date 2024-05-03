@@ -28,15 +28,29 @@ public class Enemy_behaviour : MonoBehaviour
     
     private Color lerpedColor = Color.cyan;
     // Start is called before the first frame update
+    bool ispdead;
     void Start()
     {
         dest = pointA;
+        
         mysr = this.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
+    void Update()
+    {
+        if(Player.GetComponent<Heat>().isdead)
+        {
+            Debug.Log(Player.GetComponent<Heat>().isdead);
+            Pursuing = false;
+            Walk = true;
+            canatk = false;
+            heat = 0f;
+        }
+    }
     void FixedUpdate()
     {
+        
         if (Pursuing && !Walk)
         {
             Walk_to_p();
@@ -51,7 +65,7 @@ public class Enemy_behaviour : MonoBehaviour
         {
             Attack();
         }
-
+        
     }
 
     void Walk_to_p()
@@ -102,9 +116,6 @@ public class Enemy_behaviour : MonoBehaviour
             Pursuing = true;
             Walk = false;
         }
-        
-        
-
     }
     private void OnTriggerStay2D(Collider2D col)
     {

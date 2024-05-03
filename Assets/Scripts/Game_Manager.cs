@@ -27,7 +27,7 @@ public class Game_Manager : MonoBehaviour
         {
             if(myheat.cppos == null)
             {
-                myheat.cppos = new Vector3(-9.26f, -0.602994f, 0f);
+                myheat.cppos = new Vector2(-9.26f, -0.602994f);
                 myheat.isdead = false;
 
             }
@@ -35,7 +35,8 @@ public class Game_Manager : MonoBehaviour
             {
                 myheat.slider.value = 0f;
                 myheat.isdead = false;
-                Player.GetComponent<Rigidbody2D>().MovePosition(new Vector2(myheat.cppos.x, myheat.cppos.y + 2));
+                Player.transform.position = new Vector2(myheat.cppos.x, myheat.cppos.y + 2);
+                //Player.GetComponent<Rigidbody2D>().MovePosition(new Vector2(myheat.cppos.x, myheat.cppos.y + 2));
             }
         }
     }
