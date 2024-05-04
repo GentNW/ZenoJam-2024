@@ -29,7 +29,7 @@ public class Heat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cppos = new Vector2(-12.13f, -0.99f);
+        cppos = new Vector2(-12.13f, -0.59f);
         Renderer = GetComponent<SpriteRenderer>();
         
     }

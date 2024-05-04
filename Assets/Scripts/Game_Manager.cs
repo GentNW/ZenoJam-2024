@@ -25,14 +25,7 @@ public class Game_Manager : MonoBehaviour
     {
         if (myheat.isdead)
         {
-            if(myheat.cppos == null)
-            {
-                Debug.Log("lmao");
-                myheat.cppos = new Vector2(-12.13f, -0.99f);
-                myheat.isdead = false;
-
-            }
-            else 
+            if(myheat.cppos != null)
             {
                 myheat.slider.value = 0f;
                 myheat.isdead = false;
